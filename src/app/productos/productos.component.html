@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorateur, donde puedes realizar tus compras con seguridad</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>Explorateur, donde puedes realizar tus compras con seguridad</h1>
+        <h2>Donde puedes encontrar la seguridad de comprar en linea</h2>
+    </header>
+    
+    <nav>
+        <h1>Categorias</h1>
+        <li><a href="/comestibles">Comestibles</a></li>
+        <li><a href="/limpieza">Limpieza</a></li>
+        <li><a href="/tecnologia">Tecnología</a></li>
+        <nav>
+            <span id="indicador">Carrito: <span>{{ contadorCarrito }}</span></span>
+        </nav>
+    </nav>
+    
+    <div class="contenedor" id="productos">
+        <h1>Productos más vendidos</h1>
+        <div class="product">
+            <img src="images/galletas.jpeg" alt="Producto 2">
+            <h3>Galletas Chips Ahoy</h3>
+            <p>$1.00</p>
+            <div>
+              <button (click)="notificar()">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/teclado.webp" alt="Producto 2">
+            <h3>Teclado de oficina</h3>
+            <p>$15.00</p>
+            <div>
+                <button (click)="notificar()">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/detergente.jpeg" alt="Producto 2">
+            <h3>Detergente Ciclon</h3>
+            <p>$10.00</p>
+            <div>
+              <button (click)="notificar()">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
